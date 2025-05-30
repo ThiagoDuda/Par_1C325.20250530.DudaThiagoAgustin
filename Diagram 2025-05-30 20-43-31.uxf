@@ -1,0 +1,45 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>256</x><y>344</y><w>176</w><h>120</h></coordinates><panel_attributes>/Nave/
+-
+# nombre: String
+# capacidadTripulacion: int
+# anioLanzamiento: int
+-
++ getAnioLanzamiento(): int
++ getCapacidadTripulacion
++ toString(): String
++ equals(Object obj): boolean
++ compareTo(Nave n): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>96</x><y>512</y><w>136</w><h>64</h></coordinates><panel_attributes>Exploracion
+-
+- tipoDeMision: String
+-
++ toString(): String
++ iniciarExploracion(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>256</x><y>520</y><w>136</w><h>64</h></coordinates><panel_attributes>Carguero
+-
+- capacidadDeCarga: int
+-
++ toString(): String
++ iniciarExploracion(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>528</y><w>136</w><h>56</h></coordinates><panel_attributes>CruceroEstelar
+-
+- cantidadDePasajeros: int
+-
++ toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>376</y><w>96</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;10;100;190</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>456</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>376</y><w>120</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>232</x><y>80</y><w>224</w><h>144</h></coordinates><panel_attributes>Hangar
+-
+- nombre: String
+- listaDeNaves: List
+-
++ getNombre(): String
+- existeNave(): boolean
+- hayNaves(): boolean
++ agregarNave(): boolean
++ mostrarNaves(): void
++ explorar(): void
++ ordenarNaves(): void
++ ordenarNaves(Comparator comparador): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>176</x><y>632</y><w>112</w><h>72</h></coordinates><panel_attributes>Explorar
+--
++ iniciarExploracion();</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>568</y><w>96</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;100;100;100</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>576</y><w>112</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>120;10;120;90;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>344</x><y>216</y><w>40</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 0..1
+m2= 0..n</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>
